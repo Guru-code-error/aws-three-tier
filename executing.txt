@@ -20,5 +20,8 @@ Webserver
     sudo service httpd start
     cd /var/www/html
     sudo touch index.html style.css script.js
-    copy and paste all files
+copy and paste all files
+    nano index.html
+    nano style.css
+    nano script.js
   
