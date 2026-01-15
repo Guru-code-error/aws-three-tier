@@ -1,0 +1,24 @@
+Appserver
+    sql install commands
+    1. sudo dnf update -y
+       sudo dnf install https://dev.mysql.com/get/mysql84-community-release-el9-1.noarch.rpm -y
+    2. sudo dnf install mysql-community-server -y
+    3. mysql -h endpoint url -p 3306 -u admin -p
+    4. sql commands
+        show databases;
+        use tablename;
+    python installation
+      sudo yum install python3 python3-pip 
+      pip3 install flask flask-mysql-connector flask-cors
+      nano app.py
+      nohup python3 app.py > output.log 2>41 &
+      curl http://localhost:5000/login
+Webserver
+    curl http://10.0.140.195:5000/login
+    sudo su - root
+    sudo yum install httpd -y
+    sudo service httpd start
+    cd /var/www/html
+    sudo touch index.html style.css script.js
+    copy and paste all files
+  
